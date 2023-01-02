@@ -19,7 +19,8 @@ body {
 }
 
 .container {
-    max-width: 80%;
+    max-width: 1200px;
+    margin: 0 2rem;
     display: flex;
     border-radius: 10px;
     overflow: hidden;
@@ -99,4 +100,11 @@ button:hover {
     color: white;
     border: 2px solid white;
     background: var(--dark-cyan);
+}
+
+
+@media only screen and (max-width: 760px) {
+    .container {
+        flex-direction: column;
+    }
 }
