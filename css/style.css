@@ -8,7 +8,7 @@
     --bright-orange: hsl(31, 77%, 52%);
     --cyan-color: hsl(184, 100%, 22%);
     --dark-cyan: hsl(179, 100%, 13%);
-  }
+}
 
 
 body {
@@ -21,6 +21,8 @@ body {
 .container {
     max-width: 80%;
     display: flex;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 
@@ -56,4 +58,45 @@ p {
 
 .card-3 {
     background-color: var(--dark-cyan);
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.card-1 button {
+    color: var(--bright-orange);
+}
+
+.card-1 button:hover {
+    color: white;
+    border: 2px solid white;
+    background: var(--bright-orange);
+}
+
+.card-2 button {
+    color: var(--cyan-color);
+}
+
+.card-2 button:hover {
+    color: white;
+    border: 2px solid white;
+    background: var(--cyan-color);
+}
+
+.card-3 button {
+    color: var(--dark-cyan);
+}
+
+.card-3 button:hover {
+    color: white;
+    border: 2px solid white;
+    background: var(--dark-cyan);
 }
